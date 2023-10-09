@@ -1,6 +1,7 @@
 {
-    "name": "Stasis Channel Creator",
+    "name": "stasis-channel-creator",
     "main": "src/index.js",
+    "type": "module",
     "dependencies": {
         "@sapphire/framework": "^4.6.1",
         "discord.js": "^14.13.0",
