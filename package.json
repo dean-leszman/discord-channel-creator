@@ -1,0 +1,12 @@
+{
+    "name": "Stasis Channel Creator",
+    "main": "src/index.js",
+    "dependencies": {
+        "@sapphire/framework": "^4.6.1",
+        "discord.js": "^14.13.0",
+        "dotenv": "^16.3.1"
+    },
+    "scripts": {
+        "start": "node src/index.js"
+    }
+}
