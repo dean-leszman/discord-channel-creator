@@ -52,7 +52,7 @@ export class VoiceStateUpdateListener extends Listener {
      */
     async handleOldState(state) {
         const { channel } = state;
-        if (channel?.parent?.name.toUpperCase() === 'VOICE' && channel.name.toUpperCase() !== 'CHANNEL CREATOR' && channel.members.size === 0) {
+        if (channel?.parent?.name.toUpperCase() === 'VOICE' && channel.name.toUpperCase() !== 'CHANNEL CREATOR' && channel.members.size === 0 && channel.deletable === true) {
             // no members left in channel - delete channel
             this.deleteChannel(channel);
         }
